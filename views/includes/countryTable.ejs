@@ -1,0 +1,67 @@
+<!--
+    Information to show in the table:
+●	Name
+●	Top Level Domain
+●	Calling Code
+●	Capital
+●	Region
+●	Subregion
+●	Population
+●	Timezone
+●	Language in a full word in English
+●	Currency code, name and symbol
+●	A url to the flag image
+
+-->
+
+<div class="CountryInfo">
+    <img class="countryflag" src=<%= linkToFlag % alt="Image of the flag">
+    <h1  class="countryName"><%= name %></h1>
+    <table>
+        <tr>
+            <th><div class="description">"Top Level Domain"</div></th>
+            <td><div class="countrytopLvlDomain"><%= domain %></div></td>
+        </tr>
+        <tr>
+            <th>><div class="description">"Calling Code"</div></th>
+            <td><div class="countrycallingCode"><%= cCode</div></td>
+        </tr>
+        <tr>
+            <th><div class="description">"Capital"</div></th>
+            <td><div class="countryCapital"><%= capital %></div></td>
+        </tr>
+        <tr>
+            <th><div class="description">"Region"</div></th>
+            <td><div class="countryRegion"><%= region %></div></td>
+        </tr>
+        <tr>
+            <th><div class="description">"Subregion"</div></th>
+            <td><div class="countrySubRegion"><%= sRegion %></div></td>
+        </tr>
+        <tr>
+            <th><div class="description">"Population"</div></th>
+            <td><div class="countryPopulation"><%= population %></div></td>
+        </tr>
+        <tr>
+            <th><div class="description">"Timezone"</div></th>
+            <td><div class="countryTimeZone"><%= timeZone %></div></td>
+        </tr>
+        <tr>
+            <th><div class="description">"Language"</div></th>
+            <td><div class="countrylanguageFWordEng"><%= language %></div></td>
+        </tr>
+        <tr>
+            <th><div class="description">"Currency code"</div></th>
+            <td><div class="countryCurrencyCode"><%= currencyCode %></div></td>
+        </tr>
+        <tr>
+            <th></th><div class="description">"Currency name"</div>
+            <td><div class="countryCurrencyName"><%= currencyName %></div></td>
+        </tr>
+        <tr>
+            <th><div class="description">"Currency symbol"</div></th>
+            <td><div class="countryCurrencySymbol"><%= currencySymbol %></div></td>
+        </tr>
+    </table>    
+</div>
+

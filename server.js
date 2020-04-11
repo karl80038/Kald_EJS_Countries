@@ -1,5 +1,6 @@
 const express = require("express");
 const request = require("request");
+const ejs = require("ejs");
 const path = require('path');
 const app = express();
 const requestRoute = require('./routes/requestCountry')
@@ -21,6 +22,7 @@ app.use(function(req, res, next){
     res.status(404).render('404', {
         pageTitle: "Page not Found.",
         pageNotFound: "We apologize, but we're unable to find the page you're looking for.",
+        returnLink: "Return to homepage",
         path: ""
     });
 });
