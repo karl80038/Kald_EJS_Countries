@@ -1,0 +1,199 @@
+/* © Karl-Erik Kald. All Rights Reserved. */
+.countryInfo{
+    overflow: hidden;
+    position: relative;
+    padding-right: 1em;
+    padding-bottom: 2.5rem;
+
+}
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    padding-left : 1em ;
+}
+
+.info {
+    font-size: large;
+}
+
+.countryNameFlag{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    height: 20%;
+    padding-left: 1em;
+    background-color: burlywood;
+    position: relative;
+}
+.countryFlag{
+    height: 70px;
+    margin-top: 1em;
+    float: left;
+    width: 100px;
+    object-fit: cover;
+    border: 1px solid black;
+
+}
+.countryFlag img {
+    width: 100%;
+    height: 100%;
+}
+.countryName{
+    padding-left: 3em;
+    height: 100%;
+}
+.detailsContainer {
+	height: 100%;
+	margin-bottom: 0px;
+    margin-top: 0px;
+}
+table {
+    border-spacing: 0;
+    border-left: 0px solid darkgray;
+    border-top: 1px solid darkgray;
+    border-right: 0px solid darkgray;
+
+}
+
+
+td {
+    padding-left: 1em;
+    padding-right: 1em;
+    border-left: 1px solid darkgray;
+    border-bottom: 1px solid darkgray;
+    width: 100%;
+
+
+}
+th {
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 50px;
+    border-bottom: 1px solid darkgray;
+
+}
+tr {
+    height: 100%;
+    padding: 0;
+}
+body {
+    min-height: 100vh;
+    background-color: wheat;
+    overflow: shown;
+	width: auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    background-size: 100%;
+	position: relative;
+    clear: both;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+
+}
+#info {
+    margin-bottom: 3em;
+
+}
+form {
+    padding-left: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.container {
+    padding-bottom: 2.5rem;
+}
+
+.countrySelect {
+    padding-bottom: 1em;
+    padding-top: 1em;
+    margin-right: 1em;
+    font-size: large;
+    top: 0px;
+    z-index: 1;
+    position: sticky;
+    background-blend-mode: darken;
+    background-color: whitesmoke;
+    box-shadow: 1px 3px 10px 2px #888888;
+
+}
+
+a{
+    color: cyan;
+}
+
+a:hover {
+    color: white;
+}
+
+.countryComboBox {
+    height: 50px;
+    width: 300px;
+    font-size: large;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid darkgray;
+    border-radius: 3px;
+    padding-left: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+button[type=submit] {
+    font-size: large;
+    font-family: 'Roboto', sans-serif;
+    background-color: darkblue;
+    color: white;
+    height: 50px;
+    border-radius: 3px;
+    padding-left: 1em;
+    padding-right: 1em;
+    border: 0px solid darkblue;
+}
+button[type=submit]:hover {
+    font-size: large;
+    font-family: 'Roboto', sans-serif;
+    background-color: lightblue;
+    color: black;
+    height: 50px;
+    border-radius: 3px;
+    padding-left: 1em;
+    padding-right: 1em;
+    border: 0px solid lightblue;
+    cursor: pointer;
+}
+
+header, footer{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    color: whitesmoke;
+	font-family: 'Roboto', sans-serif;
+	overflow: hidden;
+	font-weight: 300;
+    padding-right: 0;
+    width: 100%;	
+    height: 50px;
+    background-color: darkslategray;
+}
+header {
+    top: 0px;
+
+}
+
+footer {
+    bottom: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    position: absolute;
+    height: 2.5rem;
+}
+ header h1 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    float: left;
+}
+
+#copyright {
+    margin-top: 0.5em;
+    margin-left: 2em;
+    padding-bottom: 0.5em;
+}

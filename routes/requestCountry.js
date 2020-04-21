@@ -13,7 +13,9 @@ var countryarr = [est, lat, lit];
 let showTable;
 router.get("/", function(req, res) {
     res.render('requestCountry', {
-        pageTitle: 'Request information about the country',
+        headerTitle: "Kald's EJS Countries",
+        pageTitle: 'Request information about a country',
+        pageInfo: 'Choose a country from the combobox below and then click Get Info. Results will then appear below.',
         countryarray: countryarr,
         path: "/",
 
@@ -73,7 +75,9 @@ router.post("/", function(req, res) {
     console.log (imgSrc); 
 
     res.render('results', {
-        pageTitle: 'Request information about the country',
+        headerTitle: "Kald's EJS Countries",
+        pageTitle: 'Request information about a country',
+        pageInfo: 'Choose a country from the combobox below and then click Get Info. Results will then appear below.',
         countryarray: countryarr,
         path: "/",
         linkToFlag : imgSrc,

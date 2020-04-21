@@ -1,0 +1,13 @@
+<div class="countrySelect">
+    <select class = "countryComboBox" name="country">
+    <!-- <option value="EE">Estonia</option>
+    <option value="LV">Latvia</option>
+    <option value="LT">Lithuania</option> -->
+    
+        <% for (var i= 0; i < countryarray.length; i++) { %>
+
+            <option value = <%= countryarray[i].parameter %> ><%= countryarray[i].name %></option>
+        <% } %>    
+    </select>
+    <button type = "submit">Get Info</button>
+</div>

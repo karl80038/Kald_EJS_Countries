@@ -1,25 +1,17 @@
-<%- include('includes/head.ejs')  %>   
+<%- include('includes/head.ejs')  %> 
+<link rel="stylesheet" href="/css/style.css">
+
 </head>
+<%- include('includes/header.ejs') %>
 
 <body>
+    <h1><%= pageTitle %></h1>
     <form action = "/" method = "POST">
         <div class="info">
-            Choose a country from the combobox below and then click Get Info.
-            <br>
-            Results will then appear below.
+            <%= pageInfo %>
         </div>
-        <select name="country">
-            <!-- <option value="EE">Estonia</option>
-            <option value="LV">Latvia</option>
-            <option value="LT">Lithuania</option> -->
-            
-            <% for (var i= 0; i < countryarray.length; i++) { %>
+        <%- include('includes/countrySelector.ejs') %>
 
-                <option value = <%= countryarray[i].parameter %> ><%= countryarray[i].name %></option>
-            <% } %>    
-        </select>
-        <button type = "submit">Get Info</button>
     </form>
-
 
 <%- include('includes/end.ejs')  %>   

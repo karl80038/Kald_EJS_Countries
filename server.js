@@ -20,6 +20,7 @@ app.use(requestRoute);
 
 app.use(function(req, res, next){
     res.status(404).render('404', {
+        headerTitle: "Kald's EJS Countries",
         pageTitle: "Page not Found.",
         pageNotFound: "We apologize, but we're unable to find the page you're looking for.",
         returnLink: "Return to homepage",
